@@ -1,0 +1,24 @@
+.template-bg-gray {
+  background-color: #f7f9fb;
+}
+.template-fc-gray {
+  background-color: #f7f9fb;
+}
+.template-bg-blue {
+  background-color: #4b73ff;
+}
+.template-fc-blue {
+  background-color: #4b73ff;
+}
+.template-bg-black {
+  background-color: #0c0c1d;
+}
+.template-fc-black {
+  background-color: #0c0c1d;
+}
+.template-bg-hero-image {
+  background-image: url('https://example.com/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
