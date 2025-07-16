@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="/static/css/coloring.css">
+    <link rel="stylesheet" href="/static/font/stylesheet.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -19,7 +20,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav gap-3 align-items-center">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -36,25 +37,91 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li>
+            <a class="nav-link template-fc-black" href="#">Login</a>
+        </li>
+        <li>
+            <a class="nav-link template-bg-black text-white rounded-4 p-2 small-fs-1" href="#">Create Account</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
-<div class="template-bg-gray">
-<div class="container pt-5 vh-100">
-    <div class="row template-bg-hero-image d-flex align-items-center justify-content-center">
+<div class="template-bg-lightGray pt-4">
+<div class="container py-5 vh-100">
+    <div class="d-flex flex-column template-bg-hero-image pt-5 d-flex justify-content-between h-100 rounded-4">
         <div class="col-12 text-center">
-            <h1>Welcome to Mouri</h1>
-            <p>Your one-stop solution for all your web development needs.</p>
-            <div class="col-md-6">
-            <img src="https://via.placeholder.com/500" alt="Placeholder Image" class="img-fluid">
+            <h1>Investing In Your Future <br> One Home At A Time</h1>
+            <p class="">We'll help you find the key to your dream home. Experience the joy of <br> homeownership. Let us make your home buying journey simple.</p>
+            <a href="#" class="btn btn-outline-dark template-fc-black mt-2 px-4 rounded-4">Get Started</a>
         </div>
+        <div class="w-90 mx-auto d-flex bg-white p-4 translate-middle-ny rounded-4 shadow-lg">
+            <div class="flex-1">
+                <p class="mb-0">Location</p>
+                    <section class="d-flex align-items-center">
+                        <div class="dropdown custom-dropdown status_dropdown" data-color="created-status">
+                            <button class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,12">
+                                Saudi Arabia
+                            </button>
+                            <ul class="dropdown-menu status_change" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" data-class="created" href="#">Created</a></li>
+                                <li><a class="dropdown-item" data-class="support" href="#">Support</a></li>
+                                <li><a class="dropdown-item" data-class="inprogress" href="#">In Progress</a></li>
+                                <li><a class="dropdown-item" data-class="finished" href="#">Finished</a></li>
+                                <li><a class="dropdown-item" data-class="rejected" href="#">Rejected</a></li>
+                            </ul>
+                        </div>
+                    </section>
+            </div>
+            <div class="flex-1">
+                <p class="mb-0">Property Type</p>
+                <section class="d-flex align-items-center">
+                        <div class="dropdown custom-dropdown status_dropdown" data-color="created-status">
+                            <button class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,12">
+                                Duplex
+                            </button>
+                            <ul class="dropdown-menu status_change" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" data-class="created" href="#">Created</a></li>
+                                <li><a class="dropdown-item" data-class="support" href="#">Support</a></li>
+                                <li><a class="dropdown-item" data-class="inprogress" href="#">In Progress</a></li>
+                                <li><a class="dropdown-item" data-class="finished" href="#">Finished</a></li>
+                                <li><a class="dropdown-item" data-class="rejected" href="#">Rejected</a></li>
+                            </ul>
+                        </div>
+                    </section>
+            </div>
+            <div class="flex-1">
+                <p class="mb-0">Price Range</p>
+                <section class="d-flex align-items-center">
+                        <div class="dropdown custom-dropdown status_dropdown" data-color="created-status">
+                            <button class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,12">
+                                $12,000
+                            </button>
+                            <ul class="dropdown-menu status_change" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" data-class="created" href="#">Created</a></li>
+                                <li><a class="dropdown-item" data-class="support" href="#">Support</a></li>
+                                <li><a class="dropdown-item" data-class="inprogress" href="#">In Progress</a></li>
+                                <li><a class="dropdown-item" data-class="finished" href="#">Finished</a></li>
+                                <li><a class="dropdown-item" data-class="rejected" href="#">Rejected</a></li>
+                            </ul>
+                        </div>
+                    </section>
+            </div>
+            <div class="flex-1 d-flex justify-content-end align-items-center">
+                <button class="btn template-bg-blue text-white px-4 py-2">Search Property</button>
+            </div>
         </div>
-        
     </div>
     
 </div>
 </div>
 
+<script src="/static/JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

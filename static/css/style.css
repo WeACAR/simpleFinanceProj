@@ -29,5 +29,67 @@
   line-height: 0.3;
 }
 
+.rounded-4{
+  border-radius: 0.75rem;
+}
+
+.rounded-5{
+  border-radius: 1.25rem;
+}
+
+.rounded-6{
+  border-radius: 1.5rem;
+}
+
+.w-90{
+  width: 90%;
+}
+
+.mt-n3{
+  margin-top: -1rem;
+}
+
+.mb-n3{
+  margin-bottom: -1rem;
+}
+
+.mb-n4{
+  margin-bottom: -1.5rem;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.translate-middle-ny{
+  transform: translateY(50%);
+}
+
+@media (max-width: 576px) {
+  .container, .container-sm{
+    max-width: 95%;
+  }
+}
+
+.small-fs-1{
+  font-size: clamp(0.8rem, 0.5vw, 1rem);
+}
+
+  .btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
 
 
+    .custom-dropdown .dropdown-item {
+      color: #414D55;
+      font-size: 14px;
+    }
+    .custom-dropdown .dropdown-item:active {
+      background-color: #414D55;
+      color: #fff;
+    }
+
+    .status_dropdown {
+      min-width: 150px;
+    }
