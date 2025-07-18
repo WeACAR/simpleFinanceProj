@@ -68,10 +68,8 @@
   transform: translateY(50%);
 }
 
-@media (max-width: 576px) {
-  .container, .container-sm{
-    max-width: 95%;
-  }
+.translate-top-left-50{
+  transform: translate(-50%, -50%);
 }
 
 .small-fs-1{
@@ -97,11 +95,97 @@
       min-width: 150px;
     }
 
+/* row-gap-n with same spacing as gap-n */
+.row-gap-1 {
+  row-gap: 0.25rem !important;
+}
 
+.row-gap-2 {
+  row-gap: 0.5rem !important;
+}
 
-    /* media query for breakpoints as in bootstrap sm, md, lg, xl, xxl */
-@media (max-width: 576px) {}
-@media (min-width: 576px) and (max-width: 768px) {}
-@media (min-width: 768px) and (max-width: 992px) {}
-@media (min-width: 992px) and (max-width: 1200px) {}
-@media (min-width: 1200px) and (max-width: 1400px) {} 
+.row-gap-3 {
+  row-gap: 1rem !important ;
+}
+.row-gap-4 {
+  row-gap: 1.5rem !important;
+}
+
+/* media query for breakpoints as in bootstrap sm, md, lg, xl, xxl */
+@media (max-width: 576px) {
+    .container, .container-sm{
+    max-width: 95%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  /* row-gap-sm-n */
+  .row-gap-sm-1 {
+    row-gap: 0.25rem !important;
+  }
+
+  .row-gap-sm-2 {
+    row-gap: 0.5rem !important;
+  }
+
+  .row-gap-sm-3 {
+    row-gap: 1rem !important;
+  }
+
+  .row-gap-sm-4 {
+    row-gap: 1.5rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /* row-gap-md-n */
+  .row-gap-md-1 {
+    row-gap: 0.25rem !important;
+  }
+
+  .row-gap-md-2 {
+    row-gap: 0.5rem !important;
+  }
+
+  .row-gap-md-3 {
+    row-gap: 1rem !important;
+  }
+
+  .row-gap-md-4 {
+    row-gap: 1.5rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* row-gap-lg-n */
+  .row-gap-lg-1 {
+    row-gap: 0.25rem !important;
+  }
+
+  .row-gap-lg-2 {
+    row-gap: 0.5rem !important;
+  }
+
+  .row-gap-lg-3 {
+    row-gap: 1rem !important;
+  }
+
+  .row-gap-lg-4 {
+    row-gap: 1.5rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /* row-gap-xl-n */
+  .row-gap-xl-1 {
+    row-gap: 0.25rem !important;
+  }
+
+  .row-gap-xl-2 {
+    row-gap: 0.5rem !important;
+  }
+
+  .row-gap-xl-3 {
+    row-gap: 1rem !important;
+  }
+
+  .row-gap-xl-4 {
+    row-gap: 1.5rem !important;
+  }
+}
