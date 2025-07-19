@@ -1,157 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="/static/css/coloring.css">
-    <link rel="stylesheet" href="/static/font/stylesheet.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/coloring.css" />
+    <link rel="stylesheet" href="/static/font/stylesheet.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <div class="container px-4">
-    <a class="navbar-brand" href="#">Mouri</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="container px-4">
+        <a class="navbar-brand" href="#">Mouri</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav gap-3 align-items-center">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li>
-            <a class="nav-link template-fc-black" href="#">Login</a>
-        </li>
-        <li>
-            <a class="nav-link template-bg-black text-white rounded-4 p-2 small-fs-1" href="#">Create Account</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="template-bg-lightGray pt-4 pb-5">
-<section class="container py-5 vh-100 hero-section">
-    <div class="d-flex flex-column template-bg-hero-image pt-5 d-flex justify-content-between h-100 rounded-4">
-        <div class="col-12 text-center">
-            <h1>Investing In Your Future <br> One Home At A Time</h1>
-            <p class="">We'll help you find the key to your dream home. Experience the joy of <br> homeownership. Let us make your home buying journey simple.</p>
-            <a href="#" class="btn btn-outline-dark template-fc-black mt-2 px-4 rounded-4">Get Started</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-3 align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li>
+              <a class="nav-link template-fc-black" href="#">Login</a>
+            </li>
+            <li>
+              <a
+                class="nav-link template-bg-black text-white rounded-4 p-2 small-fs-1"
+                href="#"
+                >Create Account</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="w-90 mx-auto d-flex flex-column flex-sm-row bg-white p-4 translate-middle-ny rounded-4 shadow-lg flex-wrap gap-3 gap-sm-0 row-gap-3">
-            <div class="flex-1 d-flex flex-sm-column justify-content-start gap-3 gap-sm-0">
-                <p class="mb-0">Location</p>
-                    <section class="d-flex align-items-center">
-                        <div class="dropdown custom-dropdown status_dropdown" data-color="created-status">
-                            <button class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,12">
-                                Saudi Arabia
-                            </button>
-                            <ul class="dropdown-menu status_change" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" data-class="created" href="#">Created</a></li>
-                                <li><a class="dropdown-item" data-class="support" href="#">Support</a></li>
-                                <li><a class="dropdown-item" data-class="inprogress" href="#">In Progress</a></li>
-                                <li><a class="dropdown-item" data-class="finished" href="#">Finished</a></li>
-                                <li><a class="dropdown-item" data-class="rejected" href="#">Rejected</a></li>
-                            </ul>
-                        </div>
-                    </section>
-            </div>
-            <div class="flex-1 d-flex flex-sm-column justify-content-start gap-3 gap-sm-0">
-                <p class="mb-0">Property Type</p>
-                <section class="d-flex align-items-center">
-                        <div class="dropdown custom-dropdown status_dropdown" data-color="created-status">
-                            <button class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,12">
-                                Duplex
-                            </button>
-                            <ul class="dropdown-menu status_change" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" data-class="created" href="#">Created</a></li>
-                                <li><a class="dropdown-item" data-class="support" href="#">Support</a></li>
-                                <li><a class="dropdown-item" data-class="inprogress" href="#">In Progress</a></li>
-                                <li><a class="dropdown-item" data-class="finished" href="#">Finished</a></li>
-                                <li><a class="dropdown-item" data-class="rejected" href="#">Rejected</a></li>
-                            </ul>
-                        </div>
-                    </section>
-            </div>
-            <div class="flex-1 d-flex flex-sm-column justify-content-start gap-3 gap-sm-0">
-                <p class="mb-0">Price Range</p>
-                <section class="d-flex align-items-center">
-                        <div class="dropdown custom-dropdown status_dropdown" data-color="created-status">
-                            <button class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,12">
-                                $12,000
-                            </button>
-                            <ul class="dropdown-menu status_change" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" data-class="created" href="#">Created</a></li>
-                                <li><a class="dropdown-item" data-class="support" href="#">Support</a></li>
-                                <li><a class="dropdown-item" data-class="inprogress" href="#">In Progress</a></li>
-                                <li><a class="dropdown-item" data-class="finished" href="#">Finished</a></li>
-                                <li><a class="dropdown-item" data-class="rejected" href="#">Rejected</a></li>
-                            </ul>
-                        </div>
-                    </section>
-            </div>
-            <div class="flex-1 d-flex justify-content-lg-end justify-content-center align-items-center">
-                <button class="btn template-bg-blue text-white px-4 py-2 rounded-4 text-nowrap">Search Property</button>
-            </div>
-        </div>
-    </div>
-    
-</section>
-</div>
+      </div>
+    </nav>
 
-<!-- create another section same as the hero but with white background for the div above the <section> and this section include two main row, one for customers logs in columns, and one row with two columns. one for header text and under it the about us story and under it CTA button "Contact Us" with black background and white text. and the second column for image with small square with translateY 50% to up and translateX to left (the square has header("22K+") and body("Property ready to buy and sell")) -->
-<section class="container py-5">
-    <div class="row">
+    <div class="template-bg-lightGray pt-4 pb-5">
+      <section class="container py-5 vh-100 hero-section">
+        <div
+          class="d-flex flex-column template-bg-hero-image pt-5 d-flex justify-content-between h-100 rounded-4"
+        >
+          <div class="col-12 text-center">
+            <h1>
+              Investing In Your Future <br />
+              One Home At A Time
+            </h1>
+            <p class="">
+              We'll help you find the key to your dream home. Experience the joy
+              of <br />
+              homeownership. Let us make your home buying journey simple.
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-dark template-fc-black mt-2 px-4 rounded-4"
+              >Get Started</a
+            >
+          </div>
+          <div
+            class="w-90 mx-auto d-flex flex-column flex-sm-row bg-white p-4 translate-middle-ny rounded-4 shadow-lg flex-wrap gap-3 gap-sm-0 row-gap-3"
+          >
+            <div
+              class="flex-1 d-flex flex-sm-column justify-content-start gap-3 gap-sm-0"
+            >
+              <p class="mb-0">Location</p>
+              <section class="d-flex align-items-center">
+                <div
+                  class="dropdown custom-dropdown status_dropdown"
+                  data-color="created-status"
+                >
+                  <button
+                    class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-bs-offset="0,12"
+                  >
+                    Saudi Arabia
+                  </button>
+                  <ul
+                    class="dropdown-menu status_change"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" data-class="created" href="#"
+                        >Created</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="support" href="#"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="inprogress" href="#"
+                        >In Progress</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="finished" href="#"
+                        >Finished</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="rejected" href="#"
+                        >Rejected</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div
+              class="flex-1 d-flex flex-sm-column justify-content-start gap-3 gap-sm-0"
+            >
+              <p class="mb-0">Property Type</p>
+              <section class="d-flex align-items-center">
+                <div
+                  class="dropdown custom-dropdown status_dropdown"
+                  data-color="created-status"
+                >
+                  <button
+                    class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-bs-offset="0,12"
+                  >
+                    Duplex
+                  </button>
+                  <ul
+                    class="dropdown-menu status_change"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" data-class="created" href="#"
+                        >Created</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="support" href="#"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="inprogress" href="#"
+                        >In Progress</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="finished" href="#"
+                        >Finished</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="rejected" href="#"
+                        >Rejected</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div
+              class="flex-1 d-flex flex-sm-column justify-content-start gap-3 gap-sm-0"
+            >
+              <p class="mb-0">Price Range</p>
+              <section class="d-flex align-items-center">
+                <div
+                  class="dropdown custom-dropdown status_dropdown"
+                  data-color="created-status"
+                >
+                  <button
+                    class="btn p-0 dropdown-toggle w-100 d-flex align-items-center justify-content-between status__btn text-secondary"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-bs-offset="0,12"
+                  >
+                    $12,000
+                  </button>
+                  <ul
+                    class="dropdown-menu status_change"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" data-class="created" href="#"
+                        >Created</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="support" href="#"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="inprogress" href="#"
+                        >In Progress</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="finished" href="#"
+                        >Finished</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-class="rejected" href="#"
+                        >Rejected</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div
+              class="flex-1 d-flex justify-content-lg-end justify-content-center align-items-center"
+            >
+              <button
+                class="btn template-bg-blue text-white px-4 py-2 rounded-4 text-nowrap"
+              >
+                Search Property
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- create another section same as the hero but with white background for the div above the <section> and this section include two main row, one for customers logs in columns, and one row with two columns. one for header text and under it the about us story and under it CTA button "Contact Us" with black background and white text. and the second column for image with small square with translateY 50% to up and translateX to left (the square has header("22K+") and body("Property ready to buy and sell")) -->
+    <section class="container py-5">
+      <div class="row">
         <!-- five columns for customer logos -->
         <div class="flex-1">
-            <img src="/static/img/Logo/1042171_6883.jpg" alt="Customer Logo 1" class="img-fluid">
+          <img
+            src="/static/img/Logo/1042171_6883.jpg"
+            alt="Customer Logo 1"
+            class="img-fluid"
+          />
         </div>
         <div class="flex-1">
-            <img src="/static/img/Logo/1107188_8207.jpg" alt="Customer Logo 2" class="img-fluid">
+          <img
+            src="/static/img/Logo/1107188_8207.jpg"
+            alt="Customer Logo 2"
+            class="img-fluid"
+          />
         </div>
         <div class="flex-1">
-            <img src="/static/img/Logo/1107199_8217.jpg" alt="Customer Logo 3" class="img-fluid">
+          <img
+            src="/static/img/Logo/1107199_8217.jpg"
+            alt="Customer Logo 3"
+            class="img-fluid"
+          />
         </div>
-    </div>
-    <div class="row my-5 justify-content-evenly">
-        <div class="col-md-4 d-flex flex-column justify-content-center align-items-start">
-            <h1>Navigating Your Real Estate Journey</h1>
-            <p>Look For An Agency With A Proven Track Record Of Success In Buying, Selling, Or Renting Properties. You Want An Agency That Has Been In The Industry For A While And Has Experience Dealing With Various Types Of Properties.</p>
-            <button class="btn template-bg-black text-white px-4 py-2 rounded-4">Contact Us</button>
+      </div>
+      <div class="row my-5 justify-content-evenly">
+        <div
+          class="col-md-4 d-flex flex-column justify-content-center align-items-start"
+        >
+          <h1>Navigating Your Real Estate Journey</h1>
+          <p>
+            Look For An Agency With A Proven Track Record Of Success In Buying,
+            Selling, Or Renting Properties. You Want An Agency That Has Been In
+            The Industry For A While And Has Experience Dealing With Various
+            Types Of Properties.
+          </p>
+          <button class="btn template-bg-black text-white px-4 py-2 rounded-4">
+            Contact Us
+          </button>
         </div>
         <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="customer-img-holder d-flex align-items-end rounded-5">
-                <div class="bg-white p-4 rounded-4 shadow-lg position-relative translate-top-left-50 w-50">
-                    <h3 class="text-start template-fc-blue">22K+</h3>
-                    <p class="text-start">Property ready to buy and sell</p>
-                </div>
+          <div class="customer-img-holder d-flex align-items-end rounded-5">
+            <div
+              class="bg-white p-4 rounded-4 shadow-lg position-relative translate-top-left-50 no-transform-mobile w-100 w-sm-50"
+            >
+              <h3 class="text-start template-fc-blue">22K+</h3>
+              <p class="text-start">Property ready to buy and sell</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="template-bg-black text-white">
+      <section
+        class="container py-5 statistics-section d-flex flex-column gap-4"
+      >
+        <!-- this container has three rows: 1- this row has three columns, each column has h1 at the left and p at the right. 2- this row has two columns, one for h2 and one for p. 3- this row has one video container where it can exceed the container 40% at the bottom without moving only exceeding. -->
+        <div class="row g-4">
+          <div class="col-md-4 d-flex align-items-center gap-3 pe-5">
+            <h1>11K+</h1>
+            <p class="mb-1">Happy Customers with our services</p>
+          </div>
+          <div class="col-md-4 d-flex align-items-center gap-3 pe-5">
+            <h1>22K+</h1>
+            <p class="mb-1">The best property we provide</p>
+          </div>
+          <div class="col-md-4 d-flex align-items-center gap-3 pe-5">
+            <h1>520+</h1>
+            <p class="mb-1">Awesome companies believe in us</p>
+          </div>
+        </div>
+        <!-- line break -->
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Where Comfort Meets Convenience</h2>
+          </div>
+          <div class="col-md-6">
+            <p class="">
+              Look for an agency with a proven track record of success in
+              buying, selling, or renting properties. You want an agency that
+              has been in the industry for a while and has experience.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="video-container d-flex justify-content-center">
+              <media-theme-demuxed-2022 class="w-100 rounded-5 overflow-hidden">
+                <video
+                  class="rounded-5"
+                  slot="media"
+                  src="https://stream.mux.com/fXNzVtmtWuyz00xnSrJg4OJH6PyNo6D02UzmgeKGkP5YQ/low.mp4"
+                  playsinline
+                  crossorigin="anonymous"
+                ></video>
+              </media-theme-demuxed-2022>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="template-bg-lightGray mb-5">
+      <section
+        class="container py-5 statistics-section d-flex flex-column gap-4"
+      >
+        <div class="row g-4">
+            <div class="col-md-12">
+            <div class="video-container-reverse d-flex justify-content-center">
+              
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-7 text-center mb-4">
+                <h1 class="mb-4">Find Your Dream Home</h1>
+                <p class="">
+                Look for an agency with a proven track record of success in
+                buying, selling, or renting properties. You want an agency that
+                has been in the industry for a while and has experience.
+                </p>
             </div>
         </div>
+        <div class="row g-4">
+          <div class="col-4">
+            <div class="card shadow-none px-0 rounded-5 overflow-hidden">
+              <div class="ratio-1x1 ratio">
+                <img
+                  src="/static/img/Photo by Pierre Châtel-Innocenti on Unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <!-- card body has two rows: 1- for price and name. 2- for location, N beds, N baths, and N Parkings (each with icon) -->
+              <div class="card-body">
+                <h4 class="card-text template-fc-blue fw-bold">$350,000</h4>
+                <p class="card-title fw-bold fs-6">Beautiful Family Home</p>
+
+                <hr class="bg-secondary" />
+                <p class="template-fc-black d-flex align-items-center gap-1">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  123 Main St, Anytown, USA
+                </p>
+                <div class="d-flex justify-content-between">
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bed </span> 4 Beds
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bathtub </span> 3
+                    Baths
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined">
+                      directions_car
+                    </span>
+                    2 Parkings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card shadow-none px-0 rounded-5 overflow-hidden">
+              <div class="ratio-1x1 ratio">
+                <img
+                  src="/static/img/Photo by Pierre Châtel-Innocenti on Unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <!-- card body has two rows: 1- for price and name. 2- for location, N beds, N baths, and N Parkings (each with icon) -->
+              <div class="card-body">
+                <h4 class="card-text template-fc-blue fw-bold">$350,000</h4>
+                <p class="card-title fw-bold fs-6">Beautiful Family Home</p>
+
+                <hr class="bg-secondary" />
+                <p class="template-fc-black d-flex align-items-center gap-1">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  123 Main St, Anytown, USA
+                </p>
+                <div class="d-flex justify-content-between">
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bed </span> 4 Beds
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bathtub </span> 3
+                    Baths
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined">
+                      directions_car
+                    </span>
+                    2 Parkings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card shadow-none px-0 rounded-5 overflow-hidden">
+              <div class="ratio-1x1 ratio">
+                <img
+                  src="/static/img/Photo by Pierre Châtel-Innocenti on Unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <!-- card body has two rows: 1- for price and name. 2- for location, N beds, N baths, and N Parkings (each with icon) -->
+              <div class="card-body">
+                <h4 class="card-text template-fc-blue fw-bold">$350,000</h4>
+                <p class="card-title fw-bold fs-6">Beautiful Family Home</p>
+
+                <hr class="bg-secondary" />
+                <p class="template-fc-black d-flex align-items-center gap-1">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  123 Main St, Anytown, USA
+                </p>
+                <div class="d-flex justify-content-between">
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bed </span> 4 Beds
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bathtub </span> 3
+                    Baths
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined">
+                      directions_car
+                    </span>
+                    2 Parkings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card shadow-none px-0 rounded-5 overflow-hidden">
+              <div class="ratio-1x1 ratio">
+                <img
+                  src="/static/img/Photo by Pierre Châtel-Innocenti on Unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <!-- card body has two rows: 1- for price and name. 2- for location, N beds, N baths, and N Parkings (each with icon) -->
+              <div class="card-body">
+                <h4 class="card-text template-fc-blue fw-bold">$350,000</h4>
+                <p class="card-title fw-bold fs-6">Beautiful Family Home</p>
+
+                <hr class="bg-secondary" />
+                <p class="template-fc-black d-flex align-items-center gap-1">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  123 Main St, Anytown, USA
+                </p>
+                <div class="d-flex justify-content-between">
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bed </span> 4 Beds
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bathtub </span> 3
+                    Baths
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined">
+                      directions_car
+                    </span>
+                    2 Parkings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card shadow-none px-0 rounded-5 overflow-hidden">
+              <div class="ratio-1x1 ratio">
+                <img
+                  src="/static/img/Photo by Pierre Châtel-Innocenti on Unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <!-- card body has two rows: 1- for price and name. 2- for location, N beds, N baths, and N Parkings (each with icon) -->
+              <div class="card-body">
+                <h4 class="card-text template-fc-blue fw-bold">$350,000</h4>
+                <p class="card-title fw-bold fs-6">Beautiful Family Home</p>
+
+                <hr class="bg-secondary" />
+                <p class="template-fc-black d-flex align-items-center gap-1">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  123 Main St, Anytown, USA
+                </p>
+                <div class="d-flex justify-content-between">
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bed </span> 4 Beds
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bathtub </span> 3
+                    Baths
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined">
+                      directions_car
+                    </span>
+                    2 Parkings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card shadow-none px-0 rounded-5 overflow-hidden">
+              <div class="ratio-1x1 ratio">
+                <img
+                  src="/static/img/Photo by Pierre Châtel-Innocenti on Unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <!-- card body has two rows: 1- for price and name. 2- for location, N beds, N baths, and N Parkings (each with icon) -->
+              <div class="card-body">
+                <h4 class="card-text template-fc-blue fw-bold">$350,000</h4>
+                <p class="card-title fw-bold fs-6">Beautiful Family Home</p>
+
+                <hr class="bg-secondary" />
+                <p class="template-fc-black d-flex align-items-center gap-1">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  123 Main St, Anytown, USA
+                </p>
+                <div class="d-flex justify-content-between">
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bed </span> 4 Beds
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined"> bathtub </span> 3
+                    Baths
+                  </p>
+                  <p class="template-fc-black d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined">
+                      directions_car
+                    </span>
+                    2 Parkings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button
+                class="btn template-bg-black text-white px-4 py-2 rounded-4 text-nowrap"
+                >
+                Explore All Properties
+                </button>
+            </div>
+        </div>
+      </section>
     </div>
-</section>
-<script src="/static/JS/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+    <script src="/static/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/player.style/demuxed-2022/+esm"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

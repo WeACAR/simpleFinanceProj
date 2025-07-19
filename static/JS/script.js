@@ -6,3 +6,14 @@ $(".status_change .dropdown-item").click(function(){
     var generateStatusClass = `${$(this).attr('data-class')}-status`
     $(this).closest(".status_dropdown").attr("data-color", `${generateStatusClass}`);
 })
+
+
+document.addEventListener("DOMContentLoaded", function() {
+   var demo = new Moovie({
+     selector: "#video_player_1",
+     dimensions: {
+          width: "100%"
+     }
+   });
+
+});

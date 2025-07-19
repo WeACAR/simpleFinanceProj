@@ -1,4 +1,4 @@
-.hero-section{
+.hero-section {
   max-height: 740px;
 }
 .navbar-light .navbar-brand {
@@ -9,10 +9,12 @@
   letter-spacing: 2px;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
   color: #000;
 }
-
 
 .navbar-toggler {
   background: #fff;
@@ -23,7 +25,7 @@
 }
 
 .nav-link {
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .navbar-toggler {
@@ -32,68 +34,89 @@
   line-height: 0.3;
 }
 
-.rounded-4{
+.rounded-4 {
   border-radius: 0.75rem;
 }
 
-.rounded-5{
+.rounded-5 {
   border-radius: 1.25rem;
 }
 
-.rounded-6{
+media-theme-demuxed-2022::part(media) {
+  border-radius: 1rem; /* Equivalent to rounded-5 */
+  overflow: hidden;
+}
+
+
+.rounded-6 {
   border-radius: 1.5rem;
 }
 
-.w-90{
+.w-90 {
   width: 90%;
 }
 
-.mt-n3{
+.mt-n3 {
   margin-top: -1rem;
 }
 
-.mb-n3{
+.mb-n3 {
   margin-bottom: -1rem;
 }
 
-.mb-n4{
+.mb-n4 {
   margin-bottom: -1.5rem;
 }
 
-.flex-1{
+.flex-1 {
   flex: 1;
 }
 
-.translate-middle-ny{
+.translate-middle-ny {
   transform: translateY(50%);
 }
 
-.translate-top-left-50{
+.translate-top-left-50 {
   transform: translate(-50%, -50%);
 }
 
-.small-fs-1{
+.small-fs-1 {
   font-size: clamp(0.8rem, 0.5vw, 1rem);
 }
 
-  .btn:focus {
-      outline: none;
-      box-shadow: none;
-    }
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 
+.custom-dropdown .dropdown-item {
+  color: #414d55;
+  font-size: 14px;
+}
+.custom-dropdown .dropdown-item:active {
+  background-color: #414d55;
+  color: #fff;
+}
 
-    .custom-dropdown .dropdown-item {
-      color: #414D55;
-      font-size: 14px;
-    }
-    .custom-dropdown .dropdown-item:active {
-      background-color: #414D55;
-      color: #fff;
-    }
+.status_dropdown {
+  min-width: 150px;
+}
 
-    .status_dropdown {
-      min-width: 150px;
-    }
+.video-container {
+    position: relative;
+    z-index: 1; /* keep it above other content if needed */
+}
+
+.video-container media-theme-demuxed-2022 {
+    position: relative;
+    margin-bottom: -20%;
+    aspect-ratio: 20 / 9;
+}
+
+.video-container-reverse {
+    position: relative;
+    aspect-ratio: 39 / 8;
+}
 
 /* row-gap-n with same spacing as gap-n */
 .row-gap-1 {
@@ -113,11 +136,16 @@
 
 /* media query for breakpoints as in bootstrap sm, md, lg, xl, xxl */
 @media (max-width: 576px) {
-    .container, .container-sm{
+  .container,
+  .container-sm {
     max-width: 95%;
   }
+  .no-transform-mobile {
+    transform: none !important;
+  }
+  
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) {
   /* row-gap-sm-n */
   .row-gap-sm-1 {
     row-gap: 0.25rem !important;
@@ -134,8 +162,11 @@
   .row-gap-sm-4 {
     row-gap: 1.5rem !important;
   }
+  .w-sm-50 {
+    width: 50% !important;
+  }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   /* row-gap-md-n */
   .row-gap-md-1 {
     row-gap: 0.25rem !important;
@@ -152,8 +183,11 @@
   .row-gap-md-4 {
     row-gap: 1.5rem !important;
   }
+  .w-md-50 {
+    width: 50% !important;
+  }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) {
   /* row-gap-lg-n */
   .row-gap-lg-1 {
     row-gap: 0.25rem !important;
@@ -170,8 +204,11 @@
   .row-gap-lg-4 {
     row-gap: 1.5rem !important;
   }
+  .w-lg-50 {
+    width: 50% !important;
+  }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) {
   /* row-gap-xl-n */
   .row-gap-xl-1 {
     row-gap: 0.25rem !important;
@@ -187,5 +224,29 @@
 
   .row-gap-xl-4 {
     row-gap: 1.5rem !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+}
+@media (min-width: 1400px) {
+  /* row-gap-xxl-n */
+  .row-gap-xxl-1 {
+    row-gap: 0.25rem !important;
+  }
+
+  .row-gap-xxl-2 {
+    row-gap: 0.5rem !important;
+  }
+
+  .row-gap-xxl-3 {
+    row-gap: 1rem !important;
+  }
+
+  .row-gap-xxl-4 {
+    row-gap: 1.5rem !important;
+  }
+  .w-xxl-50 {
+    width: 50% !important;
   }
 }
